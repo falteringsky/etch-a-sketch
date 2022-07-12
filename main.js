@@ -39,6 +39,9 @@ function colorSquare() {
             this.style.backgroundColor = '#'+Math.floor(Math.random()*16777215).toString(16);
             /*`hs1(${Math.random()*360}, 100%, 50%)`*/
         }
+        else if (color == 'white') {
+            this.style.backgroundColor = 'white';
+        }
         else {
             this.style.backgroundColor = color;
         }

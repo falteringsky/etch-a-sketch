@@ -9,17 +9,17 @@
 </head>
 <body>
     <div id="container">
-        <div class="title">Etch-a-Sketch</div>
+        <div class="title"><h1>Etch - A - Sketch</h1></div>
         <div class="center-content">
             <div class="btn">
-                <button onclick="resetBoard()">Reset</button>
+                <button class="resetBtn" onclick="resetBoard()">Reset</button>
                 <button class="blackBtn" onclick="changeColor('Black')">Black</button>
                 <button class="randomclrBtn" onclick="changeColor('random')">Rainbow</button>
-                <button class="erasorBtn" onclick="changeColor('white')">Erasor</button>
+                <button class="erasorBtn" onclick="changeColor('white')"><img src="./images/icons8-eraser-24.png"/></button>
             </div>
-            <div>
+            <div class="inputBtn">
                 <input type="text" placeholder="Size of Board" onchange="changeSize(this.value)"/>
-                <button>Set Size</button>
+                <button class="sizeBtn">Set Size</button>
             </div>
             <div class="board"></div>
         </div>

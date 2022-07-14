@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
     background-image: url(images/red-blackPreloader.jpg);
 }
@@ -16,13 +20,14 @@ body {
   }
 
 .board {
-    width: 850px;
-    height: 550px;
+    width: 40vw;
+    height: 31vw;
     display: grid;
     background-color: white;
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 2px rgb(255, 255, 255),
       0.7em 0.7em 1em rgb(0, 208, 255);
     margin-top: 20px;
+    margin-bottom: 40px;
   }
 /*rgba(0, 0, 0, 0.1)*/
   /*rgba(0, 0, 0, 0.3)*/
@@ -30,6 +35,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
 
   .center-content {
@@ -215,6 +221,19 @@ body {
     width: auto;
 }
 
+.footer {
+  display: flex;
+  align-items: center;
+  font-style: italic;
+  color: yellow;
+  /* margin-top: 20px; */
+  width: 100%;
+  height: 30px;
+  background-color: black;
+  position:absolute;
+  bottom: -10px;
+  left: 0;
+}
 
 @media (min-width: 768px) {
     .resetBtn, .blackBtn, .randomclrBtn, .erasorBtn {

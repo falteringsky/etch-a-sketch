@@ -1,4 +1,5 @@
 const container = document.getElementById('container');
+document.querySelector('.error').style.display = 'none';
 
 let color = "black";
 let click = true;
@@ -26,10 +27,11 @@ populateBoard(16);
 
 function changeSize (input) {
     if (input >=2 && input <=100) { 
+        document.querySelector('.error').style.display = 'none';
         populateBoard(input);
     }
     else {
-        console.log('Too many squares!');
+        document.querySelector('.error').style.display = 'flex';
     }
 }
 
@@ -58,6 +60,7 @@ function resetBoard() {
     squares.forEach((div) => (div.style.backgroundColor = "white"));
   }
 
+/*Clicking required for drawing*/
   document.querySelector('body').addEventListener('click', () => {
     click = !click;
   })
